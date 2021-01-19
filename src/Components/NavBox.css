@@ -1,0 +1,56 @@
+.navBox {
+  background-color: var(--notification-bg);
+  padding: 2em;
+  width: 100%;
+}
+
+.navBox-container {
+  width: 80%;
+  margin: auto;
+}
+
+.navBox > .navBox-container > h2 {
+  text-align: center;
+  color: var(--search-btn);
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.navBox-grid {
+  /* background-color: #029; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  width: 100%;
+  margin: auto;
+}
+
+.navBox-grid > div {
+  border: 1px solid var(--separator-color);
+  background-color: var(--nav-link);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.navBox-grid > div:hover {
+  box-shadow: 0px 5px 5px var(--separator-color);
+}
+.navBox-grid > div:hover h4 {
+  color: var(--link-color);
+}
+
+.navBox-grid > div > img {
+  width: 100%;
+}
+
+.navBox-grid > div > h4 {
+  color: var(--notification-color);
+  text-align: center;
+  padding: 0.5em;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}

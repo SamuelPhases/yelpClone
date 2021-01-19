@@ -1,0 +1,106 @@
+.businessFilterContainer {
+  flex: 0.3;
+  background-color: pink;
+  height: 800px;
+  position: sticky;
+}
+
+.businessFilter {
+  height: 100%;
+  width: 100%;
+  padding: 2em;
+  background-color: mintcream;
+}
+
+.businessFilter-Header {
+  background-color: mediumpurple;
+  line-height: 1.7;
+}
+
+.businessFilter-Header > h3 {
+  font-weight: 500;
+  color: var(--notification-color);
+  font-size: 1rem;
+}
+
+.businessFilter-Header > .txt {
+  font-weight: 300;
+  color: var(--notification-color);
+  font-size: 0.8rem;
+}
+
+.businessFilter-Header > .txt-link {
+  color: var(--link-color);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.businessFilter > .range {
+  width: 90%;
+  background-color: limegreen;
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 30px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.businessFilter > .range > button {
+  background-color: transparent;
+  border: none;
+  padding: 0.8em 1.2em;
+  border-right: 1px solid var(--separator-color);
+  color: var(--notification-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.businessFilter > .suggested {
+  background-color: paleturquoise;
+  padding: 0.5em 0em;
+  /* padding-top: 0.5em; */
+}
+
+.businessFilter > .suggested > h3 {
+  border-top: 1px solid var(--separator-color);
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 0.7em 0em;
+}
+
+.grid > .check-list {
+  display: flex;
+  background-color: rgb(29, 150, 83);
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0.2em;
+}
+
+.grid > .check-list > input {
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5em;
+}
+
+.grid > .check-list > label {
+  cursor: pointer;
+  color: var(--notification-color);
+  font-size: 0.9rem;
+}
+
+.grid > .check-list > label > span {
+  color: var(--separator-color);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.grid > h3 {
+  color: var(--link-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+}

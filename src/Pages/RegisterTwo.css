@@ -1,0 +1,64 @@
+.registerTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+}
+
+.registerTwoContainer {
+  flex: 1;
+  background-color: peachpuff;
+  display: flex;
+  width: 100%;
+}
+
+.registerTwoContainer > .sidea {
+  flex: 0.5;
+  background-color: orangered;
+  padding: 1em;
+}
+
+.registerTwoContainer > .sidea > h3 {
+  color: var(--notification-color);
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 70%;
+  line-height: 1.3;
+}
+.registerTwoContainer > .sidea p {
+  color: var(--notification-color);
+}
+.registerTwoContainer > .sidea form {
+  display: flex;
+  flex-direction: column;
+}
+.registerTwoContainer > .sidea form input {
+  padding: 0.8em;
+  margin-bottom: 1.5em;
+  font-size: 0.9rem;
+  color: var(--notification-color);
+  border: 1px solid var(--separator-color);
+  border-radius: 3px;
+  outline: none;
+}
+
+.registerTwoContainer > .sidea form p {
+  margin: 0.5em 0em;
+  font-size: 0.8rem;
+}
+.registerTwoContainer > .sidea form button {
+  background-color: var(--search-btn);
+  width: fit-content;
+  border: none;
+  border-radius: 3px;
+  padding: 0.8em 1.9em;
+  outline: none;
+  color: var(--nav-link);
+  font-weight: 700;
+}
+
+.registerTwoContainer > .sidea {
+  flex: 0.5;
+  background-color: midnightblue;
+}

@@ -1,0 +1,42 @@
+.recent--collectionRowsContainer {
+  background-color: var(--nav-link);
+  width: 100%;
+}
+
+.recent--collectionRows {
+  width: 80%;
+  /* background-color: rosybrown; */
+  margin: auto;
+  padding: 2em;
+}
+
+.recent--collectionRows > h4 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-bottom: 2em;
+  color: var(--search-btn);
+}
+
+.recent--collectionsRowsRow {
+  /* background-color: palegoldenrod; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1em;
+  padding: 1em;
+  border: 1px solid var(--separator-color);
+  border-radius: 5px;
+}
+
+.recent--collectionRows > h5 {
+  color: var(--link-color);
+  padding: 1em 0em;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.recent--collectionRows > h5:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,73 @@
+.registerContainer {
+  height: 100vh;
+  background-color: teal;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.registerContainerNavbar {
+  background-color: steelblue;
+  flex: 0.7;
+  width: 50%;
+  margin: auto;
+}
+
+.registerContainerNavbar > .title {
+  background-color: slategrey;
+  color: var(--notification-color);
+}
+
+.registerContainerNavbar > .title > h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.registerContainerNavbar > .title > p {
+  margin: 0.5em 0em;
+  font-size: 0.9rem;
+}
+
+.registerContainerNavbar > form > div {
+  background-color: saddlebrown;
+  margin: 1em 0em;
+}
+
+.registerContainerNavbar > form > div > .label-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registerContainerNavbar > form label {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: var(--notification-color);
+  margin-bottom: 0.3em;
+}
+
+.registerContainerNavbar > form .label-group p {
+  font-size: 0.9rem;
+  color: var(--notification-color);
+}
+.registerContainerNavbar > form .label-group p span {
+  color: var(--link-color);
+  margin-left: 0.2em;
+}
+.registerContainerNavbar > form > div > input {
+  width: 100%;
+  padding: 0.5em 0.2em;
+  font-size: 0.9rem;
+  color: var(--notification-color);
+}
+
+.registerContainerNavbar > form > button {
+  padding: 0.5em 1em;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 0.9rem;
+  background-color: var(--search-btn);
+  border: none;
+  border-radius: 3px;
+  color: var(--nav-link);
+}

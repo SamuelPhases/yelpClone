@@ -1,0 +1,40 @@
+.partialHeaderContainer {
+  background-color: wheat;
+}
+
+.partialHeader {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partialHeader > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.partialHeader > ul > li {
+  margin-left: 1em;
+  font-size: 1rem;
+  color: var(--label-color);
+}
+
+.partialHeader > ul > li > button {
+  padding: 0.8em 1.3em;
+  font-weight: 500;
+  font-size: 0.9rem;
+  /* color: var(--nav-link); */
+  background-color: transparent;
+  border: 1px solid var(--separator-color);
+  border-radius: 3px;
+  text-transform: capitalize;
+  /* font-weight: 600; */
+}
+
+.partialHeader > ul > li:last-child > button {
+  background-color: var(--search-btn);
+  color: var(--nav-link);
+  border: none;
+}

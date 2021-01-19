@@ -1,0 +1,55 @@
+.listingsContainer {
+  height: 100vh;
+  background-color: mediumvioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listings {
+  height: 100vh;
+  background-color: mediumvioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contentListing {
+  flex: 1;
+  height: 100%;
+  background-color: tan;
+  display: flex;
+}
+
+.textListing {
+  background-color: var(--nav-link);
+  color: var(--notification-color);
+  flex: 0.5;
+  padding: 3em 1em;
+}
+.textListing > h2 {
+  font-size: 3rem;
+  margin-bottom: 0.8em;
+}
+
+.textListing > p {
+  color: var(--notification-color);
+  line-height: 1.5;
+  text-align: justify;
+  width: 90%;
+}
+
+.textListing > button {
+  margin: 3em 0em;
+  padding: 0.7em 2em;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--nav-link);
+  background-color: var(--search-btn);
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.imgBoxListing {
+  flex: 0.5;
+}

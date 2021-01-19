@@ -1,0 +1,13 @@
+.footer {
+  background: var(--search-btn);
+  /* margin-top: 2em; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > p {
+  padding: 0.8em;
+  font-weight: 500;
+  color: #fff;
+}

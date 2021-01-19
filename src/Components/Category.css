@@ -1,0 +1,25 @@
+.categoryContainer {
+  background-color: var(--notification-bg);
+  width: 100%;
+}
+
+.categoryContainer > .category {
+  width: 80%;
+  /* background-color: lightsalmon; */
+  margin: auto;
+  padding: 2em;
+}
+
+.categoryContainer > .category > h2 {
+  text-align: center;
+  color: var(--search-btn);
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 2em;
+}
+
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}

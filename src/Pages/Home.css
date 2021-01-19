@@ -1,0 +1,14 @@
+.home {
+  background-color: blue;
+  position: relative;
+}
+
+.sticky-login {
+  /* background-color: #002;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2; */
+}

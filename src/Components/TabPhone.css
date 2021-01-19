@@ -1,0 +1,40 @@
+.tabPhone {
+  /* background-color: lightsalmon; */
+  background-color: var(--nav-link);
+}
+
+.tabPhone > h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 1em 0em;
+  color: var(--search-btn);
+  font-weight: 500;
+}
+
+.tabPhoneSplit {
+  width: 80%;
+  /* background-color: lightgreen; */
+  margin: auto;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1em;
+}
+
+.tabPhoneSplit > div {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--separator-color);
+  border-radius: 5px;
+}
+
+.tabPhoneSplit > div > h4 {
+  color: var(--link-color);
+  margin-bottom: 1em;
+  font-weight: 500;
+  font-size: 1rem;
+}

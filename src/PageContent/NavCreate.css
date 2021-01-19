@@ -1,0 +1,24 @@
+.navCreate {
+  width: 100%;
+  padding: 1.5em 2.5em;
+  background-color: saddlebrown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navCreate > .logo-create > h3 {
+  font-weight: 500;
+  color: var(--notification-color);
+}
+
+.navCreate > .contact {
+  display: flex;
+  align-items: center;
+  color: var(--notification-color);
+}
+
+.navCreate > .contact p {
+  margin-bottom: 0.2em;
+  font-weight: 500;
+}

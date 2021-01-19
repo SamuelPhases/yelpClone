@@ -1,0 +1,50 @@
+.recentActivity {
+  width: 100%;
+  background-color: var(--nav-link);
+}
+
+.recentActivityContainer {
+  width: 80%;
+  padding: 2em;
+  /* background-color: orange; */
+  margin: auto;
+  padding-top: 1em;
+}
+
+.recentActivityContainer > h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--search-btn);
+  margin-bottom: 1em;
+}
+
+.recentActivityContainer-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  padding-bottom: 2em;
+}
+
+.recentActivityContainer > h4 {
+  text-align: center;
+  padding: 1em 0em;
+  border-top: 1px solid var(--separator-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--link-color);
+  cursor: pointer;
+}
+
+.recentActivityContainer > h4:hover {
+  text-decoration: underline;
+}
+
+.recentActivityContainer > h4 > .MuiSvgIcon-root {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,252 @@
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-color: blueviolet;
+  position: relative;
+  overflow: hidden;
+}
+
+.header--img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header--overlay {
+  position: absolute;
+  top: 8.5%;
+  left: 0;
+  height: 92.5%;
+  width: 100%;
+  background-color: #00000050;
+  z-index: 1;
+}
+
+.header--contentContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.header--contentContainer > .header--notificationContainer {
+  width: 100%;
+  background-color: var(--notification-bg);
+}
+
+.header--notificationContainer > .header--notification {
+  /* background-color: cornsilk; */
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.header--notificationContainer
+  > .header--notification
+  > .header--notificationLeft,
+.header--notificationContainer
+  > .header--notification
+  > .header--notificationRight {
+  display: flex;
+  align-items: center;
+}
+
+.header--notificationContainer
+  > .header--notification
+  > .header--notificationLeft
+  > h3 {
+  padding-left: 0.8em;
+  font-size: 1rem;
+  color: var(--notification-color);
+  font-weight: 500;
+}
+.header--notificationContainer
+  > .header--notification
+  > .header--notificationRight {
+  list-style: none;
+}
+
+.header--notificationContainer
+  > .header--notification
+  > .header--notificationRight
+  > li {
+  padding-right: 1em;
+  font-size: 0.75rem;
+  color: var(--link-color);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.header--notificationContainer
+  > .header--notification
+  > .header--notificationRight
+  > li:hover {
+  text-decoration: underline;
+}
+.header--notification-close {
+  color: var(--label-color);
+  margin-left: 1em;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.header--notificationNav {
+  /* background-color: darkred; */
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 1em;
+}
+
+.header--notificationNav > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header--notificationNav > ul > li {
+  padding-right: 1em;
+  color: var(--nav-link);
+  cursor: pointer;
+}
+
+.header--notificationNav > ul > button {
+  padding: 0.8em 1.5em;
+  color: var(--nav-link);
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header--notificationNav > ul > button:nth-child(2) {
+  margin-left: 1em;
+  border: 2px solid var(--nav-link);
+  border-radius: 3px;
+}
+
+.header--notificationNav > ul > button:nth-child(1):hover {
+  border-bottom: 2px solid var(--nav-link);
+  /* border-radius: 0px; */
+}
+
+.header--searchContainer {
+  /* background-color: slategrey; */
+  width: 100%;
+  margin: auto;
+  /* padding: 1em; */
+  margin-top: 5em;
+}
+
+.header--searchContainer > form {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 75%;
+  margin: auto;
+  /* background-color: mediumseagreen; */
+  display: flex;
+  align-items: center;
+}
+
+.header--searchContainer > form > div {
+  background-color: var(--nav-link);
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+}
+
+.header--searchContainer > form > div > input {
+  padding: 0.8em;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--notification-color);
+  border: none;
+  outline: none;
+}
+
+.header--searchContainer > form > div > label {
+  color: var(--notification-color);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5em;
+  padding-bottom: 0.7em;
+}
+
+.header--searchContainer > form > div:nth-child(2) > label {
+  border-left: 1px solid var(--separator-color);
+}
+
+.header--searchContainer > form > button {
+  padding: 0.63em 1.2em;
+  background-color: var(--search-btn);
+  border: none;
+  color: var(--nav-link);
+  cursor: pointer;
+}
+
+.header--searchContainer > ul {
+  display: flex;
+  align-items: center;
+  /* background-color: peachpuff; */
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.header--searchContainer > ul > li {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  color: var(--nav-link);
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.header--searchIconTab {
+  font-size: 0.8rem;
+  margin-right: 0.3em;
+}
+
+.header--searchContainer > ul > li > .MuiSvgIcon-root {
+  font-size: 1rem;
+}
+
+.header--photoCredit {
+  /* background-color: #019; */
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--nav-link);
+}
+
+.header--photoCredit > .header--photoCreditPlace {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 0.3em 0em;
+}
+
+.header--photoCredit > p {
+  padding: 0.3em 0em;
+}
+
+.header--photoCredit > p > strong {
+  text-transform: capitalize;
+}

@@ -1,0 +1,180 @@
+.newNavBox-container {
+  width: 100%;
+  background-color: var(--nav-link);
+}
+
+.newNavBox {
+  width: 79%;
+  margin: auto;
+  /* background-color: mediumvioletred; */
+  padding: 2em 1.5em;
+}
+
+.newNavBox > h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: 500;
+  color: var(--search-btn);
+  font-size: 1.4rem;
+}
+
+.newNavBox-row {
+  /* background-color: royalblue; */
+  border-bottom: 1px solid var(--separator-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.newNavBox-row > li {
+  padding: 1em;
+  /* background-color: saddlebrown; */
+  /* margin: 0em 1em; */
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 2px solid transparent;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--label-color);
+}
+
+.newNavBox-row > li:hover {
+  border-bottom: 2px solid var(--search-btn);
+}
+
+.newNavBox-row > li:last-child {
+  display: flex;
+  align-items: center;
+  /* background-color: palevioletred; */
+}
+
+.newNavBox-row > li > .newNavBox-search {
+  font-size: 1.2rem;
+  color: var(--label-color);
+  margin-top: 0.1em;
+  margin-right: 0.1em;
+}
+
+.newNavBox > h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1em 0em;
+  padding-top: 2em;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--search-btn);
+}
+
+.newNavBox > .newNavBox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  gap: 1em;
+  /* background-color: limegreen; */
+}
+
+.newNavBox > .newNavBox-grid > div {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--separator-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.newNavBox > .newNavBox-grid > div > img {
+  height: 60%;
+  object-fit: cover;
+}
+
+.newNavBox > .newNavBox-grid > div > .newNavBox-text {
+  /* background-color: midnightblue; */
+  height: 40%;
+  padding: 0.5em;
+}
+
+.newNavBox > .newNavBox-grid > div > .newNavBox-text > h2 {
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--link-color);
+  cursor: pointer;
+  width: fit-content;
+  border-bottom: 1px solid transparent;
+}
+
+.newNavBox > .newNavBox-grid > div > .newNavBox-text > h2:hover {
+  border-bottom: 1px solid var(--link-color);
+}
+
+.newNavBox > .newNavBox-grid > div > .newNavBox-text > .newNavBox-reviews {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0em;
+}
+
+.newNavBox
+  > .newNavBox-grid
+  > div
+  > .newNavBox-text
+  > .newNavBox-reviews
+  > .rating {
+  margin-right: 0.5em;
+}
+
+.newNavBox > .newNavBox-grid > div > .newNavBox-text > .newNavBox-reviews > p {
+  margin-top: -0.3em;
+  font-size: 0.9rem;
+  color: var(--label-color);
+}
+.newNavBox
+  > .newNavBox-grid
+  > div
+  > .newNavBox-text
+  > .newNavBox-reviews
+  > .rating
+  > .MuiSvgIcon-root {
+  background-color: var(--opened-color);
+  border-radius: 3px;
+  margin-right: 0.2em;
+  font-size: 1rem;
+  color: var(--nav-link);
+}
+
+.newNavBox > .newNavBox-grid > div > .newNavBox-text > h4 {
+  font-weight: 300;
+  color: var(--notification-color);
+  font-size: 1rem;
+}
+.newNavBox > .newNavBox-grid > div > .newNavBox-text > div:last-child {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0em;
+}
+
+.newNavBox > .newNavBox-grid > div > .newNavBox-text > div:last-child > h4 {
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-left: 0.3em;
+  color: var(--opened-color);
+}
+
+.newNavBox > .newNavBox-grid > div > .newNavBox-text > div:last-child > .hot {
+  color: var(--opened-color);
+  font-size: 1rem;
+}
+
+.newNavBox > h5 {
+  padding: 1em;
+  text-align: center;
+  font-weight: 300;
+  color: var(--link-color);
+  cursor: pointer;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.newNavBox > h5:hover {
+  text-decoration: underline;
+}

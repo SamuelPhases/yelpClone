@@ -1,0 +1,120 @@
+.activity {
+  background-color: orangered;
+}
+.activityContainer {
+  /* background-color: midnightblue; */
+  height: fit-content;
+  width: 300px;
+  border: 1px solid var(--separator-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.activityContainer > .content {
+  padding: 0.4em 0.8em;
+}
+
+.activityContainer > .img-content {
+  width: 100%;
+  object-fit: cover;
+  height: 120px;
+  margin: 0em 0em;
+  margin-top: 0.3em;
+}
+
+.activityContainer > .content > .dp > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.activityContainer > .content > .dp {
+  width: 3rem;
+  height: 3rem;
+  background-color: mediumturquoise;
+  border-radius: 5px;
+}
+.activityContainer > .content:nth-child(1) {
+  /* background-color: mediumpurple; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.activityContainer > .content > .content-details {
+  padding-left: 0.4em;
+}
+
+.activityContainer > .content > .content-details > h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--link-color);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.activityContainer > .content > .content-details > h3:hover {
+  text-decoration: underline;
+}
+.activityContainer > .content > .content-details > p {
+  color: var(--notification-color);
+  font-size: 0.9rem;
+}
+
+.activityContainer > .content > h3 {
+  color: var(--link-color);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.7em 0em;
+  border-bottom: 1px solid var(--separator-color);
+}
+
+.activityContainer > .content > .rating-text {
+  /* background-color: maroon; */
+  padding: 0.8em 0em;
+}
+
+.activityContainer > .content > .rating-text > .rating > .MuiSvgIcon-root {
+  background-color: var(--opened-color);
+  color: var(--nav-link);
+  margin-right: 0.3em;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+.activityContainer > .content > .rating-text > .trunc-text > p {
+  color: var(--notification-color);
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 0.9rem;
+}
+
+.activityContainer > .content > .rating-text > .trunc-text > p > span {
+  display: block;
+  color: var(--link-color);
+}
+
+.activityContainer > .content > .icon-group {
+  display: flex;
+  align-items: center;
+  padding: 0.8em 0em;
+  /* background-color: magenta; */
+}
+
+.activityContainer > .content > .icon-group > div {
+  display: flex;
+  align-items: center;
+  margin-right: 0.7em;
+  cursor: pointer;
+}
+
+.activityContainer > .content > .icon-group > div > .MuiSvgIcon-root {
+  font-size: 1.2rem;
+  margin-right: 0.2em;
+}
+
+.activityContainer > .content > .icon-group > div > p {
+  border: 1px solid var(--separator-color);
+  padding: 0.2em 0.7em;
+  border-radius: 3px;
+  font-weight: 500;
+}

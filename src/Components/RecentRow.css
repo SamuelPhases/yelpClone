@@ -1,0 +1,64 @@
+.recentRow {
+  /* background-color: olivedrab; */
+  display: flex;
+  /* width: 300px; */
+  height: 100px;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.4em;
+  border-bottom: 1px solid var(--separator-color);
+  flex-wrap: wrap;
+  /* width: 300px; */
+}
+
+.recentRow:nth-child(5),
+.recentRow:nth-child(6) {
+  border-bottom: 0px;
+}
+.recentRow > .recentRowLeft {
+  flex: 0.2;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.recentRow > .recentRowLeft > img {
+  width: 100%;
+  position: absolute;
+  border-radius: 8px;
+  top: 0;
+  left: 0;
+}
+
+.recentRow > .recentRowLeft > .bookmark {
+  color: var(--nav-link);
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.recentRow > .recentRowRight {
+  flex: 0.78;
+  /* background-color: orangered; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recentRow > .recentRowRight > h4 {
+  color: var(--link-color);
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.recentRow > .recentRowRight > div > h3 {
+  font-weight: 300;
+  color: var(--label-color);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.recentRow > .recentRowRight > div > h3 > span {
+  color: var(--link-color);
+}

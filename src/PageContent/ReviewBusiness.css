@@ -1,0 +1,54 @@
+.reviewBusinessBox {
+  background-color: blueviolet;
+  height: 150px;
+  display: flex;
+  border: 1px solid var(--separator-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.reviewBusinessBox > .pic {
+  flex: 0.3;
+  background-color: aqua;
+  margin-right: 0.5em;
+}
+
+.reviewBusinessBox > .pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reviewBusinessBox > .details {
+  flex: 0.68;
+  background-color: blanchedalmond;
+  padding: 2em 0em;
+}
+
+.reviewBusinessBox > .details > h3 {
+  color: var(--link-color);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+.reviewBusinessBox > .details > p {
+  margin: 0.3em 0em;
+  color: var(--notification-color);
+}
+
+.reviewBusinessBox > .details > .review > .MuiSvgIcon-root {
+  background-color: var(--separator-color);
+  color: var(--nav-link);
+  border-radius: 5px;
+  margin-right: 0.2em;
+  cursor: pointer;
+}
+
+.reviewBusinessBox > .remove {
+  cursor: pointer;
+  padding-top: 0.5em;
+}
+
+.reviewBusinessBox > .remove > .MuiSvgIcon-root {
+  color: var(--label-color);
+}

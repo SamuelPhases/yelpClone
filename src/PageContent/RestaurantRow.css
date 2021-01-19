@@ -1,0 +1,174 @@
+.restaurantRow {
+  background-color: firebrick;
+  border: 1px solid var(--separator-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.restaurantRow:hover {
+  box-shadow: 0px 0px 20px var(--box);
+}
+
+.slide {
+  flex: 0.3;
+  height: 12rem;
+  background-color: darkviolet;
+}
+
+.content {
+  flex: 0.68;
+  background-color: darkseagreen;
+}
+
+.content > .content-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  background-color: darkgrey;
+}
+
+.content > .content-header > h3 {
+  color: var(--notification-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  flex: 0.7;
+}
+
+.content > .content-header > .address {
+  /* flex: 0.5; */
+  background-color: darkblue;
+  padding: 0em 0.3em;
+  color: var(--separator-color);
+}
+
+.content > .content-header > .address > p {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  line-height: 1.2rem;
+  text-align: right;
+}
+.content > .content-rating {
+  background-color: crimson;
+  display: flex;
+  /* align-items: center; */
+}
+
+.content > .content-rating > .rating > .MuiSvgIcon-root {
+  background-color: var(--opened-color);
+  border-radius: 5px;
+  margin-right: 0.2em;
+  color: var(--nav-link);
+  font-size: 1rem;
+}
+.content > .content-rating > .review {
+  color: var(--separator-color);
+  font-size: 0.9rem;
+  padding-left: 0.5em;
+}
+
+.fee-type {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 55%;
+  background-color: chocolate;
+  justify-content: space-between;
+  color: var(--separator-color);
+  font-size: 0.9rem;
+  /* margin: 1em 0em; */
+}
+.dur {
+  display: flex;
+  align-items: center;
+}
+
+.dur > p {
+  color: var(--notification-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.dur > .MuiSvgIcon-root {
+  color: var(--opened-color);
+  font-size: 1.3rem;
+}
+
+.selections > .grocery {
+  color: var(--separator-color);
+  font-size: 0.9rem;
+  margin: 0.2em 0em;
+}
+
+.selections {
+  background-color: floralwhite;
+}
+
+.veg,
+.grab,
+.del,
+.del-takeout {
+  display: flex;
+  align-items: center;
+  margin: 0.2em 0em;
+}
+
+.veg > p,
+.grab > p,
+.del > p {
+  padding: 0em 0.3em;
+  font-size: 0.9rem;
+  color: var(--notification-color);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.grab > .MuiSvgIcon-root {
+  color: var(--opened-color);
+  font-size: 1.3rem;
+}
+
+.veg > .MuiSvgIcon-root,
+.del > .MuiSvgIcon-root {
+  color: green;
+  font-size: 1.3rem;
+}
+
+.best-review {
+  /* background-color: gainsboro; */
+}
+.best-review > p {
+  text-align: justify;
+  font-size: 0.9rem;
+  color: var(--separator-color);
+}
+
+.best-review > p > span {
+  color: var(--link-color);
+}
+
+.cta {
+  background-color: var(--separator-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+.cta > button {
+  padding: 0.8em 1.2em;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--notification-color);
+  background-color: var(--nav-link);
+  border: 1px solid var(--label-color);
+  border-radius: 3px;
+}
+
+.cta > p {
+  font-size: 0.9rem;
+  color: var(--notification-color);
+}
