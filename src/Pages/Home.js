@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 import './Home.css'
 
@@ -13,6 +13,8 @@ import TabPhone from '../Components/TabPhone'
 import GoogleSignIn from '../Partial/GoogleSignIn'
 
 function Home() {
+    const [googlePopup, setGooglePopup] = useState(true)
+
     return (
         <div className='home'>
             <Header />
@@ -23,10 +25,9 @@ function Home() {
             <Category />
             <TabPhone />
             <Footer />
-            {/* <div className="sticky-login"> */}
-                <GoogleSignIn />
-                {/* asdf */}
-            {/* </div> */}
+            {
+                googlePopup && <GoogleSignIn setGooglePopup={setGooglePopup} />
+            }
         </div>
     )
 }

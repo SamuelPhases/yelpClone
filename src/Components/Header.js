@@ -1,32 +1,21 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Header.css'
 
-import RedeemIcon from '@material-ui/icons/Redeem';
-import CloseIcon from '@material-ui/icons/Close';
 import SearchIcon from '@material-ui/icons/Search';
 import RestaurantIcon from '@material-ui/icons/Restaurant';
 import HomeWorkIcon from '@material-ui/icons/HomeWork';
 import MotorcycleIcon from '@material-ui/icons/Motorcycle';
+import InfoHeader from '../Partial/InfoHeader';
 
 function Header() {
+    const [infoHeaderPopup, setInfoHeaderPopup] = useState(true)
     return (
         <div className='header'>
             <img src="https://images.unsplash.com/photo-1522906456132-bac22adad34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" className='header--img' />
             <div className="header--contentContainer">
-                <div className="header--notificationContainer">
-                    <div className="header--notification">
-                        <div className="header--notificationLeft">
-                            <RedeemIcon />
-                            <h3>You can always order in</h3>
-                        </div>
-                        <ul className="header--notificationRight">
-                            <li>delivery</li>
-                            <li>pizza delivery</li>
-                            <li>chinese food delivery</li>
-                            <CloseIcon  className="header--notification-close" />
-                        </ul>
-                    </div>
-                </div>
+                {
+                    infoHeaderPopup && <InfoHeader setInfoHeaderPopup={setInfoHeaderPopup} />
+                }
                 <nav className="header--notificationNav">
                     <ul>
                         <li>Write a Review</li>
@@ -39,6 +28,9 @@ function Header() {
                     </ul>
                 </nav>
                 <div className="header--searchContainer">
+                    <div className="logo-bold">
+                        <h3>yelpClone</h3>
+                    </div>
                     <form action="">
                         <div>
                             <label htmlFor="find">Find</label>

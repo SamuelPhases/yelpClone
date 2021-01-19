@@ -4,13 +4,13 @@ import './GoogleSignIn.css'
 import CloseRoundedIcon from  '@material-ui/icons/CloseRounded'
 
 
-function GoogleSignIn() {
+function GoogleSignIn({setGooglePopup}) {
     return (
         <div className='googleSignIn-container' >
             <div className="googleSignIn">
                 <div className="googleSignIn-header">
                     <h3>Sign in to yelpclone.com with Google</h3>
-                    <div className="googleSignIn-close">
+                    <div className="googleSignIn-close" onClick={()=>setGooglePopup(false)}>
                         <CloseRoundedIcon/>
                     </div>
                 </div>
